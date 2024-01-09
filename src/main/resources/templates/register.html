@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css"
+      href="../static/static/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+
+<link rel="stylesheet" type="text/css"
+      href="../static/static/myStyle.css" th:href="@{/static/myStyle.css}">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Utilisateurs </title>
+
+  <style>
+
+    #Login{
+      margin-top: 20px;
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      top: 12px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<form th:action="@{pageLogin}" method="get">
+  <p id = "Login">Déjà un Compte? <button type="submit" id="enregistrerButton" name="action" value="save"> SE CONNECTER ICI </button></p>
+</form>
+
+  <div class = "col-md-6 col-sm-6 col-xs-12 spacer col-lg-6 offset-lg-3">
+    <div class = "panel panel-default">
+
+      <div class = "panel-body">
+      <form th:action="@{SaveUtilisateur}" method="post" th:object="${Utilisateur}">
+        <div class = "form-group">
+          <label class = "control-label"> Nom  </label>
+          <input type="text" th:field="*{nom}" class = "form-control"/>
+          <span></span>
+        </div>
+
+        <div class = "form-group">
+          <label class = "control-label"> Email  </label>
+          <input type="text" th:field="*{email}" class = "form-control"/>
+          <span></span>
+        </div>
+
+        <div class = "form-group">
+          <label class = "control-label"> Mot de Passe  </label>
+          <input type="text" th:field="*{motDePasse}" class = "form-control"/>
+          <span></span>
+        </div>
+
+        <input type="submit" value="Enregistre"/>
+      </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

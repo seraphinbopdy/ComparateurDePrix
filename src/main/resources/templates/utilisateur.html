@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css"
+      href="../static/static/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+
+<link rel="stylesheet" type="text/css"
+      href="../static/static/myStyle.css" th:href="@{/static/myStyle.css}">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Utilisateurs </title>
+<style>
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 30vh;
+        margin: 0;
+        cursor: pointer;
+        top: 50px;
+        margin-top: 70px;
+    }
+
+
+    #concenter{
+        margin-top: 40px;
+        background-color: blue;
+        color: white;
+        margin-right: 600px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        top: 12px;
+    }
+
+    </style>
+
+
+</head>
+
+<div class = "panel-heading" id = "concenter">Welcome, Recherche ton Itineraire </div>
+
+<body>
+<div class = "col-md-6 col-sm-6 col-xs-12 spacer col-lg-6 offset-lg-3">
+    <div class = "panel panel-default">
+        <div class = "panel-body">
+            <form th:action="@{trajetvoyageLink}" method="post" id="busSearchForm">
+
+                <div class = "form-group">
+                    <label class = "control-label"> Depart  </label>
+                    <input type="text" name="departureCity" required>
+                    <span></span>
+                </div>
+
+
+                <div class = "form-group">
+                    <label class = "control-label"> Arrive  </label>
+                    <input type="text" name="arrivalCity" required>
+                    <span></span>
+                </div>
+
+
+                <div class = "form-group">
+                    <label class = "control-label"> Date Voyage  </label>
+                    <input type="date"  name="departureDate" required>
+                    <span></span>
+                </div>
+
+
+                <button type="submit"> Recherche Itineraire </button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

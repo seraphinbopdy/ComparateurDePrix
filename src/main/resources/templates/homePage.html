@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css"
+      href="../static/static/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+
+<link rel="stylesheet" type="text/css"
+      href="../static/static/myStyle.css" th:href="@{/static/myStyle.css}">
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        #enregistrerButton{
+            padding-top: 1px;
+            padding-left: 10px;
+            max-width: 970px;
+            height: 30px;
+            background-color:#B3F4FE;
+        }
+
+        #connectButton{
+            padding-top: 1px;
+            padding-left: 10px;
+            max-width: 970px;
+            height: 30px;
+            background-color:#B3F4FE;
+        }
+
+    </style>
+    <title>HomePage</title>
+</head>
+
+<h1>HomePage</h1>
+
+<body>
+
+
+
+<form th:action="@{homepage}" method="get">
+    <button type="submit" id="enregistrerButton" name="action" value="save">Enregistrer</button>
+</form>
+
+<form th:action="@{pageLogin}" method="get">
+    <button type="submit" id="connectButton" name="action" value="save"> Se connecter </button>
+</form>
+
+</body>
+</html>
