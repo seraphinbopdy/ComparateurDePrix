@@ -34,6 +34,17 @@
         top: 12px;
     }
 
+    #connectButton{
+        margin-top: 40px;
+        background-color: blue;
+        color: white;
+        margin-right: 600px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        top: 12px;
+    }
+
     </style>
 
 
@@ -69,6 +80,11 @@
 
 
                 <button type="submit"> Recherche Itineraire </button>
+            </form>
+
+
+            <form th:action="@{formulaire}" method="get">
+                <button type="submit" id="connectButton"> deconnecter  </button>
             </form>
 
         </div>

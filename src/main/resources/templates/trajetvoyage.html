@@ -9,6 +9,22 @@
 <head>
     <meta charset="UTF-8">
     <title> Utilisateurs </title>
+
+    <style>
+
+        #connectButton{
+            margin-top: 20px;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            top: 12px;
+        }
+
+
+    </style>
+
 </head>
 <body>
 
@@ -28,5 +44,12 @@
     </tr>
     </tbody>
 </table>
+
+<form th:action="@{formulaire}" method="get">
+    <button type="submit" id="connectButton"> se deconnecter  </button>
+</form>
+
+
+
 </body>
 </html>
