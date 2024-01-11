@@ -1,6 +1,7 @@
 
 ### Ordonateur de prix des trajets 
-### Ecrit par SERAPHIN NOCHE BOPDA 
+### Ecrit par SERAPHIN NOCHE, KADER MAMEN, KUDAWOO Yawose
+
 
 ### Pour l'utiliser: 
 
