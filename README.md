@@ -1,5 +1,5 @@
 
-### Ordonateur de prix des trajets 
+### Comparateur de prix des trajets 
 ### Ecrit par SERAPHIN NOCHE, KADER MAMEN, KUDAWOO Yawose
 
 
