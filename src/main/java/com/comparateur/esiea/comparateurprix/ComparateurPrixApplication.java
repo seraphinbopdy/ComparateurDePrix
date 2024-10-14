@@ -1,13 +1,10 @@
 package com.comparateur.esiea.comparateurprix;
 
 import com.comparateur.esiea.comparateurprix.DAO.UtilisateurRepository;
-import com.comparateur.esiea.comparateurprix.Entity.Utilisateur;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 
 @SpringBootApplication
 public class ComparateurPrixApplication {
